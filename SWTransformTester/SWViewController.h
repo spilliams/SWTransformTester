@@ -16,6 +16,11 @@
 @property (strong, nonatomic) IBOutlet UILabel *txLabel;
 @property (strong, nonatomic) IBOutlet UILabel *tyLabel;
 
+@property (strong, nonatomic) IBOutlet UILabel *xLabel;
+@property (strong, nonatomic) IBOutlet UILabel *yLabel;
+@property (strong, nonatomic) IBOutlet UILabel *wLabel;
+@property (strong, nonatomic) IBOutlet UILabel *hLabel;
+
 @property (strong, nonatomic) IBOutlet UITextField *translateTxField;
 @property (strong, nonatomic) IBOutlet UITextField *translateTyField;
 @property (strong, nonatomic) IBOutlet UITextField *scaleSxField;
@@ -25,13 +30,13 @@
 
 - (IBAction)textFieldDidEndOnExit:(id)sender;
 
-- (IBAction)resetButtonPressed:(id)sender;
+- (IBAction)identityButtonPressed:(id)sender;
 - (IBAction)invertButtonPressed:(id)sender;
+- (IBAction)resetButtonPressed:(id)sender;
 - (IBAction)translateButtonPressed:(id)sender;
 - (IBAction)scaleButtonPressed:(id)sender;
 - (IBAction)rotateButtonPressed:(id)sender;
 - (IBAction)concatButtonPressed:(id)sender;
-- (IBAction)logButtonPressed:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIView *transformView;
 @end
