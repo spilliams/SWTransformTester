@@ -32,7 +32,6 @@
 
 - (IBAction)identityButtonPressed:(id)sender;
 - (IBAction)invertButtonPressed:(id)sender;
-- (IBAction)resetButtonPressed:(id)sender;
 - (IBAction)translateButtonPressed:(id)sender;
 - (IBAction)scaleButtonPressed:(id)sender;
 - (IBAction)rotateButtonPressed:(id)sender;

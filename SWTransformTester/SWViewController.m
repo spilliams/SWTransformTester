@@ -125,16 +125,6 @@
     [self.transformView setTransform:CGAffineTransformInvert(self.transformView.transform)];
 }
 
-- (IBAction)resetButtonPressed:(id)sender {
-    [self unregisterObserversForTransformView];
-    NSUInteger index = [[self.view subviews] indexOfObject:self.transformView];
-    [self.transformView removeFromSuperview];
-    [self setTransformView:[[UIView alloc] initWithFrame:CGRectMake(110, 52, 100, 100)]];
-    [self.transformView setBackgroundColor:[UIColor lightGrayColor]];
-    [self.view insertSubview:self.transformView atIndex:index];
-    [self registerObserversForTransformView];
-}
-
 - (IBAction)translateButtonPressed:(id)sender {
     [self.translateTxField resignFirstResponder];
     [self.translateTyField resignFirstResponder];
